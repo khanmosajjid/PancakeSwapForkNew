@@ -42,59 +42,59 @@ export const useMultipleBannerConfig = () => {
 
   return useMemo(() => {
     const NO_SHUFFLE_BANNERS: IBannerConfig[] = [
-      {
-        shouldRender: isRenderUserBanner.shouldRender && !isRenderUserBanner.isEarningsBusdZero,
-        banner: <UserBanner />,
-      },
-      {
-        shouldRender: true,
-        banner: <QuestBanner />,
-      },
-      {
-        shouldRender: true,
-        banner: <AlloraBanner />,
-      },
-      {
-        shouldRender: true,
-        banner: <OortTradingBanner />,
-      },
-      {
-        shouldRender: true,
-        banner: <AthleticsBanner />,
-      },
-      {
-        shouldRender: true,
-        banner: <FourMemeBanner />,
-      },
-      {
-        shouldRender: true,
-        banner: <ZksyncAirDropBanner />,
-      },
-      {
-        shouldRender: true,
-        banner: <PredictionBanner />,
-      },
-      {
-        shouldRender: true,
-        banner: <PerpetualSeasonalBanner />,
-      },
-      {
-        shouldRender: true,
-        banner: <PaymasterBanner />,
-      },
-      {
-        shouldRender: true,
-        banner: <FeeRefundBanner />,
-      },
-      {
-        shouldRender: true,
-        banner: <OptionsBanner />,
-      },
-      { shouldRender: true, banner: <VeCakeBanner /> },
-      {
-        shouldRender: true,
-        banner: <V4InfoBanner />,
-      },
+      // {
+      //   shouldRender: isRenderUserBanner.shouldRender && !isRenderUserBanner.isEarningsBusdZero,
+      //   banner: <UserBanner />,
+      // },
+      // {
+      //   shouldRender: true,
+      //   banner: <QuestBanner />,
+      // },
+      // {
+      //   shouldRender: true,
+      //   banner: <AlloraBanner />,
+      // },
+      // {
+      //   shouldRender: true,
+      //   banner: <OortTradingBanner />,
+      // },
+      // {
+      //   shouldRender: true,
+      //   banner: <AthleticsBanner />,
+      // },
+      // {
+      //   shouldRender: true,
+      //   banner: <FourMemeBanner />,
+      // },
+      // {
+      //   shouldRender: true,
+      //   banner: <ZksyncAirDropBanner />,
+      // },
+      // {
+      //   shouldRender: true,
+      //   banner: <PredictionBanner />,
+      // },
+      // {
+      //   shouldRender: true,
+      //   banner: <PerpetualSeasonalBanner />,
+      // },
+      // {
+      //   shouldRender: true,
+      //   banner: <PaymasterBanner />,
+      // },
+      // {
+      //   shouldRender: true,
+      //   banner: <FeeRefundBanner />,
+      // },
+      // {
+      //   shouldRender: true,
+      //   banner: <OptionsBanner />,
+      // },
+      // { shouldRender: true, banner: <VeCakeBanner /> },
+      // {
+      //   shouldRender: true,
+      //   banner: <V4InfoBanner />,
+      // },
     ]
 
     const SHUFFLE_BANNERS: IBannerConfig[] = [
