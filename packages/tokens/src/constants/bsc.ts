@@ -14,6 +14,22 @@ export const bscTokens = {
     'BNB',
     'https://www.binance.com/',
   ),
+  sun: new ERC20Token(
+    ChainId.BSC,
+    '0x65b6b9df13d2c2aaf5ae1a3956245a6ac2427192',
+    18,
+    'SUN',
+    'SUN',
+    'https://www.binance.com/',
+  ),
+  star: new ERC20Token(
+    ChainId.BSC,
+    '0x138C5312dDD8Bbc532BC63e02a4E43334B00e6A8',
+    18,
+    'STAR',
+    'STAR',
+    'https://www.binance.com/',
+  ),
   cake: CAKE_MAINNET,
   gmi: new ERC20Token(
     ChainId.BSC,

@@ -11,6 +11,15 @@ const tokens = {
     decimals: 18,
     projectLink: "https://pancakeswap.finance/",
   },
+  sun: {
+    symbol: "SUN",
+    address: {
+      56: "0x65b6b9DF13D2c2aAF5AE1A3956245a6aC2427192",
+      97: "0xFa60D973F7642B748046464e165A65B7323b0DEE",
+    },
+    decimals: 18,
+    projectLink: "https://pancakeswap.finance/",
+  },
   txl: {
     symbol: "TXL",
     address: {

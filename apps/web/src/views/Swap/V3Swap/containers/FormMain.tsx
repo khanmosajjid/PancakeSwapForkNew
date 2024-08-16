@@ -41,6 +41,7 @@ export function FormMain({ pricingAndSlippage, inputAmount, outputAmount, tradeL
     [Field.OUTPUT]: { currencyId: outputCurrencyId },
   } = useSwapState()
   const isWrapping = useIsWrapping()
+  console.log('input and output currecy is id---->', inputCurrencyId, outputCurrencyId);
   const inputCurrency = useCurrency(inputCurrencyId)
   const outputCurrency = useCurrency(outputCurrencyId)
   const { onCurrencySelection, onUserInput } = useSwapActionHandlers()

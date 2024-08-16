@@ -379,14 +379,7 @@ const EcoSystemSection: React.FC = () => {
           flexDirection={isMobile || isMd ? 'column' : 'row'}
           alignItems={isMobile || isMd ? undefined : 'center'}
         >
-          <Image
-            style={{ marginLeft: isMobile ? -32 : -72 }}
-            src={`${ASSET_CDN}/web/landing/trade-bunny.png`}
-            alt="trade-bunny"
-            width={340}
-            height={340}
-            unoptimized
-          />
+          
           <Flex flexDirection="column">
             <Title>{t('Trade')}</Title>
             <FeatureBoxesWrapper>
@@ -414,14 +407,7 @@ const EcoSystemSection: React.FC = () => {
           flexDirection={isMobile || isMd ? 'column' : 'row-reverse'}
           alignItems={isMobile || isMd ? undefined : 'center'}
         >
-          <Image
-            style={{ marginRight: isMobile || isMd ? 'auto' : -72, marginLeft: isMobile || isMd ? 0 : 'auto' }}
-            src={`${ASSET_CDN}/web/landing/earn-bunny.png`}
-            alt="earn-bunny"
-            width={296}
-            height={360}
-            unoptimized
-          />
+          
           <Flex flexDirection="column">
             <Title>{t('Earn')}</Title>
             <FeatureBoxesWrapper>
@@ -448,14 +434,7 @@ const EcoSystemSection: React.FC = () => {
           flexDirection={isMobile || isMd ? 'column' : 'row'}
           alignItems={isMobile || isMd ? undefined : 'center'}
         >
-          <Image
-            style={{ marginLeft: isMobile ? -32 : -72 }}
-            src={`${ASSET_CDN}/web/landing/game-nft-bunny.png`}
-            alt="game-nft-bunny"
-            width={344}
-            height={360}
-            unoptimized
-          />
+         
           <Flex flexDirection="column">
             <Title>{t('Game & NFT')}</Title>
             <FeatureBoxesWrapper>

@@ -65,68 +65,7 @@ const Stats = () => {
   const { isMobile, isSm, isMd, isXxl } = useMatchBreakpoints()
 
   return (
-    <Flex justifyContent="center" alignItems="center" flexDirection="column" overflow="hidden">
-      <Text textAlign="center" lineHeight="110%" fontWeight={600} mb="4px" fontSize={isMobile ? '20px' : '32px'}>
-        {t('Shaping the Future of Decentralized Trading:')}
-      </Text>
-      <Text
-        textAlign="center"
-        lineHeight="110%"
-        fontWeight={600}
-        fontSize={isMobile ? '20px' : '32px'}
-        mb={isMobile ? '32px' : '48px'}
-      >
-        {t('PancakeSwap’s Unstoppable Expansion')}
-      </Text>
-      <Flex
-        justifyContent="center"
-        alignItems="center"
-        flexDirection={isMobile ? 'column' : 'row'}
-        width={['100%', '100%', '100%', '800px']}
-        style={{ gap: isMobile ? 32 : 50 }}
-        mb={isMobile ? '32px' : '48px'}
-        flexWrap="wrap"
-      >
-        <MetricsCard
-          width={isSm || isMd ? '100%' : 'auto'}
-          title={t('Total Users:')}
-          value={addressCount}
-          description={t('in the last 30 days')}
-        />
-        <MetricsCard title={t('Total Trades:')} value={txCount} description={t('in the last 30 days')} />
-        <MetricsCard title={t('Total Value Locked:')} value={tvl} description="" prefix="$" />
-      </Flex>
-      <ChainTags />
-      <ImageLayer>
-        <BnbBallRocket>
-          <Image
-            src={`${ASSET_CDN}/web/landing/bnb-ball-rocket.png`}
-            alt="bnbBallRocket"
-            width={144}
-            height={168}
-            unoptimized
-          />
-        </BnbBallRocket>
-        <EthBallRocket>
-          <Image
-            src={`${ASSET_CDN}/web/landing/eth-ball-rocket.png`}
-            alt="ethBallRocket"
-            width={isXxl ? 116 : 70}
-            height={isXxl ? 230 : 140}
-            unoptimized
-          />
-        </EthBallRocket>
-        <AptosBallRocket>
-          <Image
-            src={`${ASSET_CDN}/web/landing/aptos-ball-rocket.png`}
-            alt="aptosBallRocket"
-            width={isXxl ? 84 : 53}
-            height={isXxl ? 101 : 64}
-            unoptimized
-          />
-        </AptosBallRocket>
-      </ImageLayer>
-    </Flex>
+   <></>
   )
 }
 

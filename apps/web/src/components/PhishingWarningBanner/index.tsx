@@ -204,27 +204,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
 
   return (
     <Container className="warning-banner" $background={banner.background}>
-      <AnimationContainer $showAnimation={showAnimation}>
-        <Flex justifyContent="center" alignItems="center">
-          {showInBigDevice && (
-            <img
-              style={banner.customStyle}
-              width={banner.stripeImageWidth}
-              alt={banner.stripeImageAlt}
-              src={banner.stripeImage}
-            />
-          )}
-          <SpeechBubble>
-            <InnerContainer>
-              <banner.component />
-            </InnerContainer>
-            <Countdown percentage={percentage} onClick={handleClickNext} />
-          </SpeechBubble>
-        </Flex>
-      </AnimationContainer>
-      <IconButton onClick={hideBanner} variant="text">
-        <CloseIcon color="#FFFFFF" />
-      </IconButton>
+    <></>
     </Container>
   )
 }

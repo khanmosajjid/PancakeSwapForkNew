@@ -32,17 +32,6 @@ export const SwapSelection = ({ swapType }: { swapType: SwapType }) => {
   const { chainId } = useActiveChainId()
   if (!isTwapSupported(chainId)) return null
   return (
-    <ButtonMenu
-      mb={3}
-      scale="sm"
-      fullWidth
-      activeIndex={swapType}
-      onItemClick={(index) => onSelect(index)}
-      variant="subtle"
-    >
-      <ButtonMenuItem>MARKET</ButtonMenuItem>
-      <ButtonMenuItem>TWAP</ButtonMenuItem>
-      <ButtonMenuItem>LIMIT</ButtonMenuItem>
-    </ButtonMenu>
+  <></>
   )
 }
