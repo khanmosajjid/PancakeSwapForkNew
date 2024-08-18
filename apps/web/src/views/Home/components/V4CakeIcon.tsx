@@ -37,9 +37,9 @@ export const V4CakeIcon = () => {
 
   return (
     <NextLink href="/v4">
-      <Container hasScrollToTopButton={hasScrollToTopButton}>
+      {/* <Container hasScrollToTopButton={hasScrollToTopButton}>
         <Image src={`${ASSET_CDN}/web/v4-landing/v4-icon.png`} alt="introducing-v4-icon" width={48} height={48} />
-      </Container>
+      </Container> */}
     </NextLink>
   )
 }
