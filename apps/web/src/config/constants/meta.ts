@@ -4,9 +4,9 @@ import { ASSET_CDN } from './endpoints'
 import { PageMeta } from './types'
 
 export const DEFAULT_META: PageMeta = {
-  title: 'PancakeSwap',
+  title: 'SunSwap',
   description: 'Trade, earn, and own crypto on the all-in-one multichain DEX',
-  image: `${ASSET_CDN}/web/og/hero.jpg`,
+  image: ``,
 }
 
 interface PathList {
@@ -17,8 +17,8 @@ interface PathList {
 const getPathList = (t: ContextApi['t']): PathList => {
   return {
     paths: {
-      '/': { title: t('Home') },
-      '/swap': { basePath: true, title: t('Exchange'), image: `${ASSET_CDN}/web/og/swap.jpg` },
+      // '/': { title: t('Home') },
+      '/': { basePath: true, title: t('Exchange'), image: `${ASSET_CDN}/web/og/swap.jpg` },
       '/limit-orders': { basePath: true, title: t('Limit Orders'), image: `${ASSET_CDN}/web/og/limit.jpg` },
       '/add': { basePath: true, title: t('Add Liquidity'), image: `${ASSET_CDN}/web/og/liquidity.jpg` },
       '/remove': { basePath: true, title: t('Remove Liquidity'), image: `${ASSET_CDN}/web/og/liquidity.jpg` },

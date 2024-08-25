@@ -56,17 +56,7 @@ const NotificationsWidget = memo(({ isRegistered }: INotificationWidget) => {
   }, [isSubscribed])
 
   return (
-    <NotificationMenu viewIndex={viewIndex} subscriptionId={subscription?.topic}>
-      <Box tabIndex={-1} onMouseEnter={disableGlobalScroll} onMouseLeave={enableGlobalScroll}>
-        <ViewContainer $viewIndex={viewIndex}>
-          <OnBoardingView isReady={isSubscribed} isRegistered={isRegistered} />
-
-          <NotificationView toggleSettings={toggleSettings} subscription={subscription} />
-
-          <NotificationSettings toggleSettings={toggleSettings} />
-        </ViewContainer>
-      </Box>
-    </NotificationMenu>
+  <></>
   )
 })
 

@@ -89,7 +89,7 @@ const FarmAuction = () => {
         <Breadcrumbs>
           <NextLink href="/">
             <StyledLink color="primary" style={{ fontWeight: 400 }}>
-              {t('Home')}
+              {t('Exchange')}
             </StyledLink>
           </NextLink>
           <NextLink href="/farms">

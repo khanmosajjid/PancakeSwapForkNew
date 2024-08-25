@@ -174,7 +174,7 @@ const CreateProposal = () => {
     <Container py="40px">
       <Box mb="48px">
         <Breadcrumbs>
-          <Link href="/">{t('Home')}</Link>
+          <Link href="/">{t('Exchange')}</Link>
           <Link href="/voting">{t('Voting')}</Link>
           <Text>{t('Make a Proposal')}</Text>
         </Breadcrumbs>

@@ -2,9 +2,10 @@ import { dehydrate, QueryClient } from '@tanstack/react-query'
 import { GetStaticProps } from 'next'
 import { getTotalTvl } from 'utils/getTotalTVL'
 import Home from '../views/Home'
+import Swap from "../views/Swap"
 
 const IndexPage = () => {
-  return <Home />
+  return <Swap />
 }
 
 export const getStaticProps: GetStaticProps = async () => {

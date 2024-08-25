@@ -9,7 +9,7 @@ const Crumbs = () => {
     <Box mb="24px">
       <Breadcrumbs>
         <NextLink href="/">
-          <StyledLink color="primary">{t('Home')}</StyledLink>
+          <StyledLink color="primary">{t('Exchange')}</StyledLink>
         </NextLink>
         <NextLink href="/prediction">
           <StyledLink color="primary">{t('Prediction')}</StyledLink>

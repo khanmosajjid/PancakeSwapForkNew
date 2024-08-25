@@ -146,7 +146,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
       >
         <Wrapper>
           <FixedContainer showMenu={showMenu} height={totalTopMenuHeight}>
-            {banner && isMounted && <TopBannerContainer height={topBannerHeight}>{banner}</TopBannerContainer>}
+            
             <StyledNav>
               <Flex>
                 {logoComponent ?? <Logo href={homeLink?.href ?? "/"} />}
@@ -172,26 +172,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
               </Flex>
             </StyledNav>
           </FixedContainer>
-          {subLinks ? (
-            <Flex justifyContent="space-around" overflow="hidden">
-              <SubMenuItems
-                items={subLinksWithoutMobile}
-                mt={`${totalTopMenuHeight + 1}px`}
-                activeItem={activeSubItem}
-              />
-
-              {subLinksMobileOnly && subLinksMobileOnly?.length > 0 && (
-                <SubMenuItems
-                  items={subLinksMobileOnly}
-                  mt={`${totalTopMenuHeight + 1}px`}
-                  activeItem={activeSubItem}
-                  isMobileOnly
-                />
-              )}
-            </Flex>
-          ) : (
-            <div />
-          )}
+         
           <BodyWrapper mt={!subLinks ? `${totalTopMenuHeight + 1}px` : "0"}>
             <Inner>{children}</Inner>
           </BodyWrapper>

@@ -73,16 +73,16 @@ const config = {
   images: {
     contentDispositionType: 'attachment',
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'static-nft.pancakeswap.com',
-        pathname: '/mainnet/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'assets.pancakeswap.finance',
-        pathname: '/web/**',
-      },
+      // {
+      //   protocol: 'https',
+      //   hostname: 'static-nft.pancakeswap.com',
+      //   pathname: '/mainnet/**',
+      // },
+      // {
+      //   protocol: 'https',
+      //   hostname: 'assets.pancakeswap.finance',
+      //   pathname: '/web/**',
+      // },
     ],
   },
   async rewrites() {

@@ -60,7 +60,7 @@ const Proposals = () => {
     <Container py="40px">
       <Box mb="48px">
         <Breadcrumbs>
-          <Link href="/">{t('Home')}</Link>
+          <Link href="/">{t('Exchange')}</Link>
           <Text>{t('Voting')}</Text>
         </Breadcrumbs>
       </Box>

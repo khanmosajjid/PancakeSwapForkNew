@@ -168,7 +168,7 @@ export function Step3() {
       </Heading>
       <Text pb="48px">
         {t(
-          'In PancakeSwap Exchange V3, liquidity providers are able to customize the trading fee tier and concentrate their liquidity to a specific price range to maximize their capital efficiency.',
+          'In Sunswap Exchange V3, liquidity providers are able to customize the trading fee tier and concentrate their liquidity to a specific price range to maximize their capital efficiency.',
         )}
       </Text>
 
