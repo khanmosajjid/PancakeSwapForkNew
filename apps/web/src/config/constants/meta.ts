@@ -4,7 +4,7 @@ import { ASSET_CDN } from './endpoints'
 import { PageMeta } from './types'
 
 export const DEFAULT_META: PageMeta = {
-  title: 'SunSwap',
+  title: 'Starswap',
   description: 'Trade, earn, and own crypto on the all-in-one multichain DEX',
   image: ``,
 }
@@ -18,7 +18,7 @@ const getPathList = (t: ContextApi['t']): PathList => {
   return {
     paths: {
       // '/': { title: t('Home') },
-      '/': { basePath: true, title: t('Exchange'), image: `${ASSET_CDN}/web/og/swap.jpg` },
+      '/': { basePath: true, title: t('Exchange'), image: `` },
       '/limit-orders': { basePath: true, title: t('Limit Orders'), image: `${ASSET_CDN}/web/og/limit.jpg` },
       '/add': { basePath: true, title: t('Add Liquidity'), image: `${ASSET_CDN}/web/og/liquidity.jpg` },
       '/remove': { basePath: true, title: t('Remove Liquidity'), image: `${ASSET_CDN}/web/og/liquidity.jpg` },
@@ -39,17 +39,17 @@ const getPathList = (t: ContextApi['t']): PathList => {
       '/info': {
         title: `${t('Overview')} - ${t('Info')}`,
         description: 'View statistics for Pancakeswap exchanges.',
-        image: `${ASSET_CDN}/web/og/info.jpg`,
+        image: ``,
       },
       '/info/pairs': {
         title: `${t('Pairs')} - ${t('Info')}`,
         description: 'View statistics for Pancakeswap exchanges.',
-        image: `${ASSET_CDN}/web/og/info.jpg`,
+        image: ``,
       },
       '/info/tokens': {
         title: `${t('Tokens')} - ${t('Info')}`,
         description: 'View statistics for Pancakeswap exchanges.',
-        image: `${ASSET_CDN}/web/og/info.jpg`,
+        image: ``,
       },
       '/nfts': { title: t('NFT Marketplace'), image: `${ASSET_CDN}/web/og/nft.jpg` },
       '/nfts/collections': { basePath: true, title: t('Collections'), image: `${ASSET_CDN}/web/og/nft.jpg` },

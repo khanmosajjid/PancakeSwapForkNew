@@ -29,10 +29,10 @@ import { chains } from 'utils/wagmi'
 import { useAccount } from 'wagmi'
 import { ChainLogo } from './Logo/ChainLogo'
 
-const AptosChain = {
-  id: 1,
-  name: 'Aptos',
-}
+// const AptosChain = {
+//   id: 1,
+//   name: 'Aptos',
+// }
 
 const NetworkSelect = ({ switchNetwork, chainId, isWrongNetwork }) => {
   const { t } = useTranslation()
@@ -68,24 +68,7 @@ const NetworkSelect = ({ switchNetwork, chainId, isWrongNetwork }) => {
             </Text>
           </UserMenuItem>
         ))}
-      <UserMenuItem
-        key={`aptos-${AptosChain.id}`}
-        style={{ justifyContent: 'flex-start' }}
-        as="a"
-        target="_blank"
-        href="https://aptos.pancakeswap.finance/swap"
-      >
-        <Image
-          src="https://aptos.pancakeswap.finance/images/apt.png"
-          width={24}
-          height={24}
-          unoptimized
-          alt={`chain-aptos-${AptosChain.id}`}
-        />{' '}
-        <Text color="text" pl="12px">
-          {AptosChain.name}
-        </Text>
-      </UserMenuItem>
+     
     </>
   )
 }
@@ -149,23 +132,23 @@ const SHORT_SYMBOL = {
   [ChainId.ETHEREUM]: 'ETH',
   [ChainId.BSC]: 'BNB',
   [ChainId.BSC_TESTNET]: 'tBNB',
-  [ChainId.GOERLI]: 'GOR',
-  [ChainId.ARBITRUM_ONE]: 'ARB',
-  [ChainId.ARBITRUM_GOERLI]: 'tARB',
-  [ChainId.POLYGON_ZKEVM]: 'Polygon zkEVM',
-  [ChainId.POLYGON_ZKEVM_TESTNET]: 'tZkEVM',
-  [ChainId.ZKSYNC]: 'zkSync',
-  [ChainId.ZKSYNC_TESTNET]: 'tZkSync',
-  [ChainId.LINEA]: 'Linea',
-  [ChainId.LINEA_TESTNET]: 'tLinea',
-  [ChainId.OPBNB]: 'opBNB',
-  [ChainId.OPBNB_TESTNET]: 'tOpBNB',
-  [ChainId.BASE]: 'Base',
-  [ChainId.BASE_TESTNET]: 'tBase',
-  [ChainId.SCROLL_SEPOLIA]: 'tScroll',
-  [ChainId.SEPOLIA]: 'sepolia',
-  [ChainId.BASE_SEPOLIA]: 'Base Sepolia',
-  [ChainId.ARBITRUM_SEPOLIA]: 'Arb Sepolia',
+  // [ChainId.GOERLI]: 'GOR',
+  // [ChainId.ARBITRUM_ONE]: 'ARB',
+  // [ChainId.ARBITRUM_GOERLI]: 'tARB',
+  // [ChainId.POLYGON_ZKEVM]: 'Polygon zkEVM',
+  // [ChainId.POLYGON_ZKEVM_TESTNET]: 'tZkEVM',
+  // [ChainId.ZKSYNC]: 'zkSync',
+  // [ChainId.ZKSYNC_TESTNET]: 'tZkSync',
+  // [ChainId.LINEA]: 'Linea',
+  // [ChainId.LINEA_TESTNET]: 'tLinea',
+  // [ChainId.OPBNB]: 'opBNB',
+  // [ChainId.OPBNB_TESTNET]: 'tOpBNB',
+  // [ChainId.BASE]: 'Base',
+  // [ChainId.BASE_TESTNET]: 'tBase',
+  // [ChainId.SCROLL_SEPOLIA]: 'tScroll',
+  // [ChainId.SEPOLIA]: 'sepolia',
+  // [ChainId.BASE_SEPOLIA]: 'Base Sepolia',
+  // [ChainId.ARBITRUM_SEPOLIA]: 'Arb Sepolia',
 } as const satisfies Record<ChainId, string>
 
 export const NetworkSwitcher = () => {

@@ -329,7 +329,7 @@ export function RoutingSettingsButton({
   const handleDismiss = useCallback(() => setShow(false), [])
   return (
     <>
-      <AtomBox textAlign="center">
+      {/* <AtomBox textAlign="center">
         <NotificationDot show={isRoutingSettingChange && showRedDot}>
           <Button variant="text" onClick={() => setShow(true)} scale="sm" {...buttonProps}>
             {children || t('Customize Routing')}
@@ -338,7 +338,7 @@ export function RoutingSettingsButton({
       </AtomBox>
       <ModalV2 isOpen={show} onDismiss={handleDismiss} closeOnOverlayClick>
         <RoutingSettings />
-      </ModalV2>
+      </ModalV2> */}
     </>
   )
 }

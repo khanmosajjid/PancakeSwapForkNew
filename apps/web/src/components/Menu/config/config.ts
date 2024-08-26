@@ -151,41 +151,41 @@ const config: (
     //     },
     //   ].map((item) => addMenuItemSupported(item, chainId)),
     // },
-    {
-      label: t('Game'),
-      icon: PancakeProtectorIcon,
-      hideSubNav: true,
-      href: 'https://pancakeswap.games/',
-      // items: [
-      //   {
-      //     label: t('Gaming Marketplace'),
-      //     href: 'https://pancakeswap.games/',
-      //     type: DropdownMenuItemType.EXTERNAL_LINK,
-      //   },
-      //   {
-      //     label: t('Prediction (BETA)'),
-      //     href: '/prediction',
-      //     image: '/images/decorations/prediction.png',
-      //     supportChainIds: PREDICTION_SUPPORTED_CHAINS,
-      //   },
-      //   {
-      //     label: t('Lottery'),
-      //     href: '/lottery',
-      //     image: '/images/decorations/lottery.png',
-      //   },
-      //   {
-      //     label: t('Quests'),
-      //     href: 'https://quest.pancakeswap.finance/quests',
-      //     status: { text: t('New'), color: 'success' },
-      //     type: DropdownMenuItemType.EXTERNAL_LINK,
-      //   },
-      //   {
-      //     label: t('Pottery (BETA)'),
-      //     href: '/pottery',
-      //     image: '/images/decorations/lottery.png',
-      //   },
-      // ].map((item) => addMenuItemSupported(item, chainId)),
-    },
+    // {
+    //   label: t('Game'),
+    //   icon: PancakeProtectorIcon,
+    //   hideSubNav: true,
+    //   href: 'https://pancakeswap.games/',
+    //   // items: [
+    //   //   {
+    //   //     label: t('Gaming Marketplace'),
+    //   //     href: 'https://pancakeswap.games/',
+    //   //     type: DropdownMenuItemType.EXTERNAL_LINK,
+    //   //   },
+    //   //   {
+    //   //     label: t('Prediction (BETA)'),
+    //   //     href: '/prediction',
+    //   //     image: '/images/decorations/prediction.png',
+    //   //     supportChainIds: PREDICTION_SUPPORTED_CHAINS,
+    //   //   },
+    //   //   {
+    //   //     label: t('Lottery'),
+    //   //     href: '/lottery',
+    //   //     image: '/images/decorations/lottery.png',
+    //   //   },
+    //   //   {
+    //   //     label: t('Quests'),
+    //   //     href: 'https://quest.pancakeswap.finance/quests',
+    //   //     status: { text: t('New'), color: 'success' },
+    //   //     type: DropdownMenuItemType.EXTERNAL_LINK,
+    //   //   },
+    //   //   {
+    //   //     label: t('Pottery (BETA)'),
+    //   //     href: '/pottery',
+    //   //     image: '/images/decorations/lottery.png',
+    //   //   },
+    //   // ].map((item) => addMenuItemSupported(item, chainId)),
+    // },
     // {
     //   label: t('NFT'),
     //   href: `${nftsBaseUrl}`,
