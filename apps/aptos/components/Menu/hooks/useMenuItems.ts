@@ -34,11 +34,11 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
         label: t('Liquidity'),
         href: '/liquidity',
       },
-      {
-        label: t('Bridge'),
-        href: 'https://bridge.pancakeswap.finance/aptos',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
+      // {
+      //   label: t('Bridge'),
+      //   href: 'https://bridge.pancakeswap.finance/aptos',
+      //   type: DropdownMenuItemType.EXTERNAL_LINK,
+      // },
     ],
   },
   {
