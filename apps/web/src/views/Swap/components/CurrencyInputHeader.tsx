@@ -67,7 +67,7 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = memo(
       tooltip: buyCryptoTooltip,
       tooltipVisible: buyCryptoTooltipVisible,
       targetRef: buyCryptoTargetRef,
-    } = useTooltip(<Text>{t('Buy crypto with fiat.')}</Text>, {
+    } = useTooltip(<Text>{t('')}</Text>, {
       placement: isMobile ? 'top' : 'bottom',
       trigger: isMobile ? 'focus' : 'hover',
       ...(isMobile && { manualVisible: mobileTooltipShow }),
@@ -110,21 +110,7 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = memo(
           <Swap.CurrencyInputHeaderSubTitle>{subtitle}</Swap.CurrencyInputHeaderSubTitle>
         </Flex>
         <Flex width="100%" justifyContent="end">
-          {chainId ? (
-            <Flex alignItems="center" justifyContent="center" px="4px" mt="5px">
-              <TooltipText
-                ref={buyCryptoTargetRef}
-                onClick={() => setMobileTooltipShow(false)}
-                display="flex"
-                style={{ justifyContent: 'center' }}
-              >
-                <InternalLink href="/buy-crypto" data-dd-action-name="Swap buy crypto button">
-                  <Image src={BuyCryptoIcon} alt="#" style={{ justifyContent: 'center' }} />
-                </InternalLink>
-              </TooltipText>
-              {buyCryptoTooltipVisible && (!isMobile || mobileTooltipShow) && buyCryptoTooltip}
-            </Flex>
-          ) : null}
+         
           {isChartSupported && (
             <ColoredIconButton
               onClick={() => {
