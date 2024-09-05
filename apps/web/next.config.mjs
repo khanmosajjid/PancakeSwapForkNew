@@ -148,56 +148,56 @@ const config = {
         destination: '/swap',
         permanent: true,
       },
-      {
-        source: '/create/:currency*',
-        destination: '/add/:currency*',
-        permanent: true,
-      },
-      {
-        source: '/farms/archived',
-        destination: '/farms/history',
-        permanent: true,
-      },
-      {
-        source: '/pool',
-        destination: '/liquidity',
-        permanent: true,
-      },
-      {
-        source: '/staking',
-        destination: '/pools',
-        permanent: true,
-      },
-      {
-        source: '/syrup',
-        destination: '/pools',
-        permanent: true,
-      },
-      {
-        source: '/collectibles',
-        destination: '/nfts',
-        permanent: true,
-      },
-      {
-        source: '/info/pools',
-        destination: '/info/pairs',
-        permanent: true,
-      },
-      {
-        source: '/info/pools/:address',
-        destination: '/info/pairs/:address',
-        permanent: true,
-      },
-      {
-        source: '/api/v3/:chainId/farms/liquidity/:address',
-        destination: 'https://farms-api.pancakeswap.com/v3/:chainId/liquidity/:address',
-        permanent: false,
-      },
-      {
-        source: '/images/tokens/:address',
-        destination: 'https://tokens.pancakeswap.finance/images/:address',
-        permanent: false,
-      },
+      // {
+      //   source: '/create/:currency*',
+      //   destination: '/add/:currency*',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/farms/archived',
+      //   destination: '/farms/history',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/pool',
+      //   destination: '/liquidity',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/staking',
+      //   destination: '/pools',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/syrup',
+      //   destination: '/pools',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/collectibles',
+      //   destination: '/nfts',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/info/pools',
+      //   destination: '/info/pairs',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/info/pools/:address',
+      //   destination: '/info/pairs/:address',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/api/v3/:chainId/farms/liquidity/:address',
+      //   destination: 'https://farms-api.pancakeswap.com/v3/:chainId/liquidity/:address',
+      //   permanent: false,
+      // },
+      // {
+      //   source: '/images/tokens/:address',
+      //   destination: 'https://tokens.pancakeswap.finance/images/:address',
+      //   permanent: false,
+      // },
     ]
   },
   webpack: (webpackConfig, { webpack, isServer }) => {

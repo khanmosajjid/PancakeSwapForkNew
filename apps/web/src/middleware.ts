@@ -10,20 +10,6 @@ export const middleware = stackMiddlewares([withClientId, withGeoBlock, withUser
 export const config = {
   matcher: [
     '/',
-    '/swap',
-    '/liquidity',
-    '/pools',
-    '/cake-staking',
-    '/gauges-voting',
-    '/farms',
-    '/add',
-    '/ifo',
-    '/remove',
-    '/prediction',
-    '/find',
-    '/limit-orders',
-    '/lottery',
-    '/nfts',
-    '/info/:path*',
+    
   ],
 }

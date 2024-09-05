@@ -230,14 +230,14 @@ const useEarnBlockData = () => {
         defaultImage: `${ASSET_CDN}/web/landing/earn-farm-purple.png`,
         path: '/farms',
       },
-      {
-        title: t('Pools'),
-        description: t('Stake CAKE, earn various rewards'),
-        ctaTitle: t('Stake Now'),
-        image: `${ASSET_CDN}/web/landing/earn-pools.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/earn-pools-purple.png`,
-        path: '/pools',
-      },
+      // {
+      //   title: t('Pools'),
+      //   description: t('Stake CAKE, earn various rewards'),
+      //   ctaTitle: t('Stake Now'),
+      //   image: `${ASSET_CDN}/web/landing/earn-pools.png`,
+      //   defaultImage: `${ASSET_CDN}/web/landing/earn-pools-purple.png`,
+      //   path: '/pools',
+      // },
       {
         title: t('Liquid Staking'),
         description: t('Earn rewards while retaining asset flexibility'),

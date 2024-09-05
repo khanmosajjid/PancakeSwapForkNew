@@ -14,17 +14,17 @@ export const useMenuItemsStatus = (): Record<string, string> => {
 
   return useMemo(() => {
     return {
-      '/competition': competitionStatus || '',
-      '/ifo': ifoStatus || '',
-      ...(votingStatus && {
-        '/voting': votingStatus,
-      }),
-      ...(isUserLocked && {
-        '/pools': 'lock_end',
-      }),
-      ...(tradingRewardStatus && {
-        '/trading-reward': tradingRewardStatus,
-      }),
+      // '/competition': competitionStatus || '',
+      // '/ifo': ifoStatus || '',
+      // ...(votingStatus && {
+      //   '/voting': votingStatus,
+      // }),
+      // ...(isUserLocked && {
+      //   '/pools': 'lock_end',
+      // }),
+      // ...(tradingRewardStatus && {
+      //   '/trading-reward': tradingRewardStatus,
+      // }),
     }
   }, [competitionStatus, ifoStatus, votingStatus, isUserLocked, tradingRewardStatus])
 }
