@@ -27,21 +27,8 @@ const MigrateActionButton: React.FunctionComponent<MigrateActionButtonPropsType>
   const dispatch = useAppDispatch()
 
   const handleUnstakeWithCallback = async (amount: string, callback: () => void) => {
-    const receipt = await fetchWithCatchTxError(() => {
-      return onUnstake(amount)
-    })
-    if (receipt?.status) {
-      toastSuccess(
-        `${t('Unstaked')}!`,
-        <ToastDescriptionWithTx txHash={receipt.transactionHash}>
-          {t('Your earnings have also been harvested to your wallet')}
-        </ToastDescriptionWithTx>,
-      )
-      callback()
-      if (account && chainId) {
-        dispatch(fetchFarmUserDataAsync({ account, pids: [pid], chainId }))
-      }
-    }
+    
+    
   }
 
   const [onPresentMigrate] = useModal(

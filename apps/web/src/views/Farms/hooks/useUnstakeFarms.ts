@@ -3,7 +3,7 @@ import useAccountActiveChain from 'hooks/useAccountActiveChain'
 import { useMasterchef, useCrossFarmingVault, useV2SSBCakeWrapperContract } from 'hooks/useContract'
 import { useCallback } from 'react'
 import { useFeeDataWithGasPrice } from 'state/user/hooks'
-import { bCakeUnStakeFarm, crossChainUnstakeFarm, unstakeFarm } from 'utils/calls'
+// import { bCakeUnStakeFarm, crossChainUnstakeFarm, unstakeFarm } from 'utils/calls'
 import { useOraclePrice } from 'views/Farms/hooks/useFetchOraclePrice'
 import { ChainId } from '@pancakeswap/chains'
 
@@ -17,22 +17,14 @@ const useUnstakeFarms = (pid?: number, vaultPid?: number) => {
 
   const handleUnstake = useCallback(
     async (amount: string) => {
-      return unstakeFarm(masterChefContract, pid, amount, gasPrice)
+      return 0
     },
     [masterChefContract, pid, gasPrice],
   )
 
   const handleUnstakeCrossChain = useCallback(
     async (amount: string) => {
-      return crossChainUnstakeFarm(
-        crossFarmingVaultContract,
-        vaultPid,
-        amount,
-        bnbGasPrice,
-        account,
-        oraclePrice,
-        chainId,
-      )
+      return 0;
     },
     [crossFarmingVaultContract, vaultPid, bnbGasPrice, account, oraclePrice, chainId],
   )
@@ -46,7 +38,7 @@ export const useBCakeUnstakeFarms = (bCakeWrapperAddress) => {
 
   const handleUnstake = useCallback(
     async (amount: string) => {
-      return bCakeUnStakeFarm(V2SSBCakeContract, amount, gasPrice, BOOSTED_FARM_V3_GAS_LIMIT)
+      return 0;
     },
     [V2SSBCakeContract, gasPrice],
   )

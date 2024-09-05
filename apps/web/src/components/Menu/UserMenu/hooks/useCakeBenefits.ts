@@ -8,7 +8,7 @@ import { useTranslation } from '@pancakeswap/localization'
 import { useChainCurrentBlock } from 'state/block/hooks'
 import { getVaultPosition, VaultPosition } from 'utils/cakePool'
 import { getCakeVaultAddress } from 'utils/addressHelpers'
-import { getActivePools } from 'utils/calls'
+
 import { cakeVaultV2ABI } from '@pancakeswap/pools'
 import { BIG_ZERO } from '@pancakeswap/utils/bigNumber'
 import { convertSharesToCake } from 'views/Pools/helpers'
@@ -101,7 +101,7 @@ const useCakeBenefits = () => {
         const credit = await ifoCreditAddressContract.read.getUserCredit([account])
         iCake = getBalanceNumber(new BigNumber(credit.toString())).toLocaleString('en', { maximumFractionDigits: 3 })
 
-        const eligiblePools: any = await getActivePools(ChainId.BSC, currentBscBlock)
+        const eligiblePools: any = 0;
         const poolAddresses = eligiblePools.map(({ contractAddress }) => contractAddress)
 
         const [cakeVaultBalance, total] = await getScores(

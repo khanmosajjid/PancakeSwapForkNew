@@ -1,7 +1,7 @@
 import { ChainId } from '@pancakeswap/chains'
 import { bscTokens } from '@pancakeswap/tokens'
 import { useQuery } from '@tanstack/react-query'
-import { getActivePools } from 'utils/calls'
+
 import { publicClient } from 'utils/wagmi'
 import { Address } from 'viem'
 import { useAccount } from 'wagmi'
@@ -33,11 +33,8 @@ const useGetVotingPower = (block?: number): State & { isLoading: boolean; isErro
       if (blockNumber >= VECAKE_VOTING_POWER_BLOCK) {
         return getVeVotingPower(account, blockNumber)
       }
-      const eligiblePools = await getActivePools(ChainId.BSC, Number(blockNumber))
-      const poolAddresses: Address[] = eligiblePools
-        .filter((pair) => pair.stakingToken.address.toLowerCase() === bscTokens.cake.address.toLowerCase())
-        .map(({ contractAddress }) => contractAddress)
-
+      const eligiblePools = 0;
+      const poolAddresses: Address[] = ['0xea377177257520480ee9afba6bff76f9daf563beece84d8178be68e54cbd3842']
       const {
         cakeBalance,
         cakeBnbLpBalance,
