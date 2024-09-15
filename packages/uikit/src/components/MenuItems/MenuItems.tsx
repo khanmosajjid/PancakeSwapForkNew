@@ -14,7 +14,9 @@ const MenuItems: React.FC<React.PropsWithChildren<MenuItemsProps>> = ({
 }) => {
   return (
     <Flex {...props}>
-      {items.map(({ label, items: menuItems = [], href, icon, disabled, onClick }) => {
+      {items.map((item) => {
+        if (!item) return null; // Add this line to handle undefined items
+        const { label, items: menuItems = [], href, icon, disabled, onClick } = item;
         const statusColor = menuItems?.find((menuItem) => menuItem.status !== undefined)?.status?.color;
         const isActive = activeItem === href;
         const linkProps = isTouchDevice() && menuItems && menuItems.length > 0 ? {} : { href };

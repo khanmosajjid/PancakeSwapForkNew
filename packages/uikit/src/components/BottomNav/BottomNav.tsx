@@ -19,42 +19,48 @@ const BottomNav: React.FC<React.PropsWithChildren<BottomNavProps>> = ({
     <>
       {isBottomMenuOpen && <Overlay />}
       <StyledBottomNav justifyContent="space-around" {...props}>
-        {items.map(
-          (
-            { label, items: menuItems, href, icon, fillIcon, showOnMobile = true, showItemsOnMobile = true, disabled },
-            index
-          ) => {
-            const statusColor = menuItems?.find((menuItem) => menuItem.status !== undefined)?.status?.color;
-            return (
-              showOnMobile && (
-                <DropdownMenu
-                  key={`${label}#${href}`}
-                  items={menuItems}
-                  isBottomNav
-                  activeItem={activeSubItem}
-                  showItemsOnMobile={showItemsOnMobile}
-                  setMenuOpenByIndex={setMenuOpenByIndex}
-                  index={index}
-                  isDisabled={disabled}
-                >
-                  <Box>
-                    <NotificationDot show={!!statusColor} color={statusColor}>
-                      <BottomNavItem
-                        href={href}
-                        disabled={disabled}
-                        isActive={href === activeItem}
-                        label={label}
-                        icon={icon}
-                        fillIcon={fillIcon}
-                        showItemsOnMobile={showItemsOnMobile}
-                      />
-                    </NotificationDot>
-                  </Box>
-                </DropdownMenu>
-              )
-            );
-          }
-        )}
+        {items.map((item, index) => {
+          if (!item) return null; // Add this line to handle undefined items
+          const {
+            label,
+            items: menuItems,
+            href,
+            icon,
+            fillIcon,
+            showOnMobile = true,
+            showItemsOnMobile = true,
+            disabled,
+          } = item;
+          const statusColor = menuItems?.find((menuItem) => menuItem?.status !== undefined)?.status?.color;
+          return (
+            showOnMobile && (
+              <DropdownMenu
+                key={`${label}#${href}`}
+                items={menuItems}
+                isBottomNav
+                activeItem={activeSubItem}
+                showItemsOnMobile={showItemsOnMobile}
+                setMenuOpenByIndex={setMenuOpenByIndex}
+                index={index}
+                isDisabled={disabled}
+              >
+                <Box>
+                  <NotificationDot show={!!statusColor} color={statusColor}>
+                    <BottomNavItem
+                      href={href}
+                      disabled={disabled}
+                      isActive={href === activeItem}
+                      label={label}
+                      icon={icon}
+                      fillIcon={fillIcon}
+                      showItemsOnMobile={showItemsOnMobile}
+                    />
+                  </NotificationDot>
+                </Box>
+              </DropdownMenu>
+            )
+          );
+        })}
       </StyledBottomNav>
     </>
   );
